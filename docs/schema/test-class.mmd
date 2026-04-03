@@ -1,0 +1,28 @@
+classDiagram
+    class User {
+        +String id
+        +String email
+        +String name
+        +login()
+        +logout()
+    }
+
+    class Order {
+        +String id
+        +String userId
+        +Number total
+        +String status
+        +create()
+        +update()
+        +cancel()
+    }
+
+    class Product {
+        +String id
+        +String name
+        +Number price
+        +getDetails()
+    }
+
+    User "1" --> "*" Order
+    Order "*" --> "*" Product

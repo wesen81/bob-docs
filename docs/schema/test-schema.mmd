@@ -1,0 +1,16 @@
+erDiagram
+    USER {
+        string _id PK
+        string email
+        string name
+        int age
+    }
+
+    ORDER {
+        string _id PK
+        string userId FK
+        string status
+        int total
+    }
+
+    USER ||--o{ ORDER : "places"

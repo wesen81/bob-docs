@@ -1,0 +1,39 @@
+# Development files
+.git
+.gitignore
+.ralph-tui
+.playwright-mcp
+node_modules
+src
+public
+scripts
+docs
+
+# Build configuration
+vite.config.ts
+tsconfig*.json
+eslint.config.js
+postcss.config.js
+tailwind.config.js
+
+# Development docs
+tasks
+bun.lock
+
+# Editor files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test files
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+__tests__

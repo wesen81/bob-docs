@@ -1,0 +1,12 @@
+sequenceDiagram
+    participant User
+    participant Frontend
+    participant API
+    participant Database
+
+    User->>Frontend: Click Login
+    Frontend->>API: POST /auth/login
+    API->>Database: Query user credentials
+    Database-->>API: Return user data
+    API-->>Frontend: Return JWT token
+    Frontend-->>User: Show dashboard
